@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const EnterRoom = () => {
-	return <div>enter</div>
-}
+	return <div>enter</div>;
+};
 
-export default EnterRoom
+export default EnterRoom;
