@@ -7,7 +7,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
 	typography: {
-		fontFamily: 'VT323',
+		fontFamily: ['VT323', 'NanumGothic-Regular'],
 	},
 });
 
