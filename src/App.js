@@ -1,16 +1,13 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { Main, CreateRoom, EnterRoom } from './components/page';
-import { Header } from './components/UI';
 import './scss/main.scss';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Grid className="app">
-				{/* <Typography className="app-title">Raccoon</Typography> */}
-				<Header />
 				<Switch>
 					<Route exact path="/" component={Main} />
 					<Route exact path="/create" component={CreateRoom} />
