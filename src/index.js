@@ -3,13 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-
-const theme = createMuiTheme({
-	typography: {
-		fontFamily: ['VT323', 'NanumGothic-Regular'],
-	},
-});
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import theme from './theme';
 
 ReactDOM.render(
 	<MuiThemeProvider theme={theme}>
