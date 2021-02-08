@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 const RaccoonList = () => {
 	const [Raccoon, setRaccoon] = useState(0);
 	return (
-		<>
+		<div className="Rclist">
 			<Header
 				right={
 					<div>
@@ -74,7 +74,7 @@ const RaccoonList = () => {
 					<RaccoonListUI RaccoonNum={Raccoon} />
 				</Grid>
 			</Grid>
-		</>
+		</div>
 	);
 };
 
