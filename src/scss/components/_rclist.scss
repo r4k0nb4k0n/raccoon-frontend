@@ -5,4 +5,37 @@
 .createBtn {
 	border: solid 1.5pt white;
 	margin-right: 1rem !important;
+	font-size: 1.2rem !important;
+	letter-spacing: 1px;
+}
+
+.mainContainer{
+	display:flex;
+	flex-direction: column;
+}
+
+.mainTitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainText {
+	font-size: 2.5rem !important;
+	letter-spacing: 0.8rem;
+}
+
+.subTitle {
+	margin-left: 5% !important;
+	letter-spacing: 0.2rem;
+	display: flex;
+	align-items: center;
+}
+
+.subText {
+	font-size: 2rem !important;
+}
+
+.subText2 {
+	font-size: 1.5rem !important;
 }
