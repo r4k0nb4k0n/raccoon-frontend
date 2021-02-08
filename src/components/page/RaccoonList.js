@@ -5,6 +5,7 @@ import {
 	Typography,
 	InputAdornment,
 	TextField,
+	Box,
 } from '@material-ui/core';
 import { ArrowDropDown, AccountCircle } from '@material-ui/icons';
 import SearchIcon from '@material-ui/icons/Search';
@@ -65,12 +66,15 @@ const RaccoonList = () => {
 				<Grid item className="subTitle">
 					<Typography className="subText2">Raccoons({Raccoon})</Typography>
 					<Link to="/create">
-						<Typography style={{ textDecoration: 'underline' }}>
+						<Typography
+							color="accent1.main"
+							style={{ textDecoration: 'underline' }}
+						>
 							Create new
 						</Typography>
 					</Link>
 				</Grid>
-				<Grid item xs={12} className="subTitle">
+				<Grid container className="subTitle">
 					<RaccoonListUI RaccoonNum={Raccoon} />
 				</Grid>
 			</Grid>

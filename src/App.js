@@ -1,7 +1,13 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
-import { Main, CreateRoom, EnterRoom, ColorPalette, RaccoonList } from './components/page';
+import {
+	Main,
+	CreateRoom,
+	EnterRoom,
+	ColorPalette,
+	RaccoonList,
+} from './components/page';
 import './scss/main.scss';
 
 function App() {

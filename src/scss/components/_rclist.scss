@@ -27,10 +27,22 @@
 	}
 	
 	.subTitle {
-		margin-left: 5% !important;
+		padding-left: 5% !important;
 		letter-spacing: 0.2rem;
 		display: flex;
 		align-items: center;
+		.cardItem {
+			padding-right: 5% !important;
+			margin-top: 1rem !important;
+			.Card {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 20vh !important;
+				border: 3px solid white;
+				border-radius: 20px;
+			}
+		}
 	}
 	
 	.subText {

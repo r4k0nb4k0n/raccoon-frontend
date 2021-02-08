@@ -1,8 +1,19 @@
 import React from 'react';
-import { Card } from '@material-ui/core';
+import { Grid, Card, CardContent, Typography } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 function CreateCard() {
-	return <div>createCard</div>;
+	return (
+		<Grid item xs={12} className="cardItem">
+			<Link to="/create">
+				<Card className="Card">
+					<CardContent>
+						<Typography>+ Add a Raccoon</Typography>
+					</CardContent>
+				</Card>
+			</Link>
+		</Grid>
+	);
 }
 
 function RaccoonCard() {
