@@ -15,7 +15,7 @@ const Nickname = () => {
 			<Dialog
 				open={true}
 				aria-labelledby="formDialogTitle"
-				className="dialog"
+				className="dialogNickname"
 				BackdropProps={{
 					className: 'backdrop',
 				}}
@@ -23,19 +23,23 @@ const Nickname = () => {
 					className: 'paper',
 				}}
 			>
-				<DialogTitle id="formDialogTitle" disableTypography={true}>
+				<DialogTitle
+					id="formDialogTitle"
+					disableTypography={true}
+					className="title"
+				>
 					<Typography variant="h4">... And your nickname?</Typography>
 				</DialogTitle>
 				<DialogContent className="content">
 					<TextField
 						autoFocus
 						required
-						margin="dense"
 						id="nickname"
 						label="Nickname"
-						variant="filled"
 						fullWidth
 						className="field"
+						InputLabelProps={{ className: 'label', shrink: true }}
+						InputProps={{ className: 'input' }}
 					/>
 				</DialogContent>
 				<DialogActions className="actions">

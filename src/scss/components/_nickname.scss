@@ -1,4 +1,4 @@
-.dialog {
+.dialogNickname {
 	.backdrop {
 		opacity: 0 !important;
 	}
@@ -10,12 +10,23 @@
 		font-size: 3rem !important;
 		padding: 10px;
 	}
+	.title {
+		text-align: center;
+	}
 	.content {
 		padding-left: 50px;
 		padding-right: 50px;
 		.field {
-			background-color: $main-white-main;
-			border-radius: 5px !important;
+			padding-top: 0.1em;
+			.label {
+				color: $main-white-main;
+				font-size: 0.5em;
+			}
+			.input {
+				background-color: $main-white-main;
+				color: $main-white-contrastText;
+				font-size: 0.75em;
+			}
 		}
 	}
 	.actions {
