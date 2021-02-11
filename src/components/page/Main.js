@@ -9,8 +9,8 @@ const Main = () => {
 			<Header />
 			<Grid container spacing={3} className="main">
 				<Grid item>
-					<Link to={`/enter`}>
-						<Button className="enterButton" size="large">
+					<Link to={`/play/pin`}>
+						<Button className="playButton" size="large">
 							PLAY
 						</Button>
 					</Link>
