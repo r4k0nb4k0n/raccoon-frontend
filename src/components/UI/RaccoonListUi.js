@@ -8,7 +8,7 @@ function CreateCard() {
 			<Link to="/create">
 				<Card className="Card">
 					<CardContent>
-						<Typography>+ Add a Raccoon</Typography>
+						<Typography variant="h6">+ Add a Raccoon</Typography>
 					</CardContent>
 				</Card>
 			</Link>
