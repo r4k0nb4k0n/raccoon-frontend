@@ -5,9 +5,9 @@ import { Header } from '../UI';
 
 const Main = () => {
 	return (
-		<React.Fragment>
+		<div className="main">
 			<Header />
-			<Grid container spacing={3} className="main">
+			<Grid container spacing={3} className="buttons">
 				<Grid item>
 					<Link to={`/play/pin`}>
 						<Button className="playButton" size="large">
@@ -23,7 +23,7 @@ const Main = () => {
 					</Link>
 				</Grid>
 			</Grid>
-		</React.Fragment>
+		</div>
 	);
 };
 
