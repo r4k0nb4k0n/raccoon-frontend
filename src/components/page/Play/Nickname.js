@@ -6,17 +6,9 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Typography from '@material-ui/core/Typography';
-import { useHistory } from 'react-router-dom';
 import { Header } from '../../UI';
 
-const Pin = () => {
-	const history = useHistory();
-
-	const handleButton = (e) => {
-		history.push({
-			pathname: '/play/nickname',
-		});
-	};
+const Nickname = () => {
 	return (
 		<>
 			<Header />
@@ -32,27 +24,22 @@ const Pin = () => {
 				}}
 			>
 				<DialogTitle id="formDialogTitle" disableTypography={true}>
-					<Typography variant="h4">Join Raccoon with given PIN</Typography>
+					<Typography variant="h4">... And your nickname?</Typography>
 				</DialogTitle>
 				<DialogContent className="content">
 					<TextField
 						autoFocus
 						required
 						margin="dense"
-						id="pin"
-						label="PIN Code"
+						id="nickname"
+						label="Nickname"
 						variant="filled"
 						fullWidth
 						className="field"
 					/>
 				</DialogContent>
 				<DialogActions className="actions">
-					<Button
-						variant="contained"
-						className="button"
-						fullWidth
-						onClick={handleButton}
-					>
+					<Button variant="contained" className="button" fullWidth>
 						Enter
 					</Button>
 				</DialogActions>
@@ -61,4 +48,4 @@ const Pin = () => {
 	);
 };
 
-export default Pin;
+export default Nickname;
